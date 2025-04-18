@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Videos</title>
+</head>
+<body>
+    <h1>Download Videos</h1>
+    <form action="/downloadVideos" method="post">
+        <label for="videoPageUrl">Video Page URL:</label>
+        <input type="text" id="videoPageUrl" name="videoPageUrl" required><br><br>
+        
+        <label for="tmdbName">TMDB Name:</label>
+        <input type="text" id="tmdbName" name="tmdbName" required><br><br>
+        
+        <label for="season">Season:</label>
+        <input type="number" id="season" name="season" required><br><br>
+        
+        <label for="start">Start Episode:</label>
+        <input type="number" id="start" name="start" required><br><br>
+        
+        <label for="end">End Episode:</label>
+        <input type="number" id="end" name="end" required><br><br>
+        
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>

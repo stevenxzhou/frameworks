@@ -1,0 +1,7 @@
+.DS_Store
+**/node_modules
+**/vr
+**/android
+**/azure_functions
+**/*.mp4
+**/*.tar
