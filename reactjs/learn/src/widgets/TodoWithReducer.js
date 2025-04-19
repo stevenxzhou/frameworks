@@ -1,5 +1,6 @@
 import { useState, useReducer, act } from "react";
 import { useTheme } from "../context/useTheme";
+import { useParams } from "react-router-dom";
 
 export default function Todo() {
 
@@ -27,6 +28,8 @@ export default function Todo() {
     }
 
     const [ todoText, setTodoText] = useState("");
+    const { id } = useParams();
+
 
     const reducer = (state, action) => {
         switch (action.type) {
@@ -70,7 +73,7 @@ export default function Todo() {
 
     return (
         <div className="flex flex-col items-center min-h-screen justify-center">
-            <h1 className="font-bold text-2xl">Todo List</h1>
+            <h1 className="font-bold text-2xl">Todo List - {id}</h1>
             <div className="flex space-x-4 p-10">
                 <input className="border-b border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" value={todoText} onChange={(e) => setTodoText(e.target.value)} />
                 <button className="bg-red-500 rounded-lg p-2 hover:bg-blue-500" onClick={() => dispatch({type: TodoAction.ADD_TODO, description: todoText})}>Add</button>

@@ -20,7 +20,6 @@ export default function Todo() {
     const [ todos, setTodos ] = useState(initialTodos);
     const [ todoText, setTodoText] = useState("");
 
-
     const addTodo = function() {
         let id = todos.length + 1;
 
