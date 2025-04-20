@@ -5,3 +5,4 @@
 **/azure_functions
 **/*.mp4
 **/*.tar
+**/*.pyc
