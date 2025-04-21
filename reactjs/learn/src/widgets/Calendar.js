@@ -64,6 +64,7 @@ const Calendar = () => {
                         <option>2025</option>
                         <option>2024</option>
                         <option>2023</option>
+                        <option>1987</option>
                         {/* <!-- Add more years as needed --> */}
                     </select>
                 </div>

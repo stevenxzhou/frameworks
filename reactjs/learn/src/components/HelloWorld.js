@@ -1,4 +1,4 @@
-import '../styles/HelloWorld.css';
+import './HelloWorld.css';
 
 function HelloWorld() {
     return (
