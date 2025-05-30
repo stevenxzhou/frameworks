@@ -22,7 +22,7 @@ const MeControl = () => {
         
         // cleanup the listener when componnet unmounts
         return () => {
-            document.removeEventListener('mousedown', handleClickOutsid, true);
+            document.removeEventListener('mousedown', handleClickOutside, true);
         };
     }, []);
 
